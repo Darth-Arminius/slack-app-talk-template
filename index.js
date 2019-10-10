@@ -5,6 +5,10 @@ const app = new App({
   signingSecret: process.env.SLACK_SIGNING_SECRET,
 });
 
+app.message('Hi', async ({ message, say }) => {
+  say('Hello there.');
+});
+
 (async () => {
   await app.start(4390);
 
