@@ -1,0 +1,22 @@
+{
+  "name": "slack-app-talk-template",
+  "version": "1.0.0",
+  "description": "A quickstart template for Slack Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darth-Arminius/slack-app-talk-template.git"
+  },
+  "author": "Darth Arminius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darth-Arminius/slack-app-talk-template/issues"
+  },
+  "homepage": "https://github.com/Darth-Arminius/slack-app-talk-template#readme",
+  "dependencies": {
+    "@slack/bolt": "^1.4.0"
+  }
+}
