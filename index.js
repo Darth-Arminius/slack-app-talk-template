@@ -6,7 +6,31 @@ const app = new App({
 });
 
 app.message('Hi', async ({ message, say }) => {
-  say(`Hello there, <@${message.user}>`);
+  say({
+    blocks: [
+      {
+        type: 'section',
+        text: {
+          type: 'mrkdwn',
+          text: `Hello there, <@${message.user}>!`,
+        },
+        accessory: {
+          type: 'button',
+          text: {
+            type: 'plain_text',
+            text: 'Click Me',
+          },
+          action_id: 'button_click_handler',
+        },
+      },
+    ],
+  });
+});
+
+app.action('button_click_handler', ({ body, ack, say }) => {
+  ack();
+
+  say(`You push my buttons <@${body.user.id}>`);
 });
 
 (async () => {
