@@ -1,6 +1,6 @@
 # Slack App Talk Template
 
-## A quickstart template of a Slack App used for the AND Digital Slack App Dev Lightning Talk
+### A quickstart template of a Slack App used for the AND Digital Slack App Dev Lightning Talk
 
 # Installation
 
